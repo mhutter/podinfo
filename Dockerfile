@@ -5,5 +5,6 @@ RUN CGO_ENABLED=0 go build -a -o /podinfo .
 
 FROM scratch
 ENV PORT=8080
+EXPOSE $PORT
 COPY --from=build /podinfo /podinfo
 CMD [ "/podinfo" ]

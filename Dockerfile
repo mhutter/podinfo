@@ -1,4 +1,4 @@
-FROM docker.io/library/golang:1.15-alpine AS build
+FROM docker.io/library/golang:1.16-alpine AS build
 WORKDIR /src
 COPY . .
 RUN CGO_ENABLED=0 go build -a -o /podinfo .

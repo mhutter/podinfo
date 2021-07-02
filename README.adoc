@@ -1,5 +1,7 @@
 = podinfo
 
+image:https://quay.io/repository/mhutter/podinfo/status["Docker Repository on Quay", link="https://quay.io/repository/mhutter/podinfo"]
+
 App that returns some info about the pod it is running in.
 
 == Developing

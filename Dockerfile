@@ -1,4 +1,4 @@
-FROM registry.mhnet.dev/library/golang:1.17-alpine AS build
+FROM registry.mhnet.dev/library/golang:1.19-alpine AS build
 WORKDIR /src/podinfo
 COPY . .
 RUN CGO_ENABLED=0 go build -ldflags "-s" -o /podinfo .
